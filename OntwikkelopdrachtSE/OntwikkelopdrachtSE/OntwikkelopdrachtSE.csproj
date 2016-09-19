@@ -46,13 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enemy.cs" />
-    <Compile Include="Entity.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="CharacterCreationDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CharacterCreationDetails.Designer.cs">
+      <DependentUpon>CharacterCreationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enemy.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="MainMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMap.Designer.cs">
+      <DependentUpon>MainMap.cs</DependentUpon>
     </Compile>
     <Compile Include="Map.cs" />
     <Compile Include="Player.cs" />

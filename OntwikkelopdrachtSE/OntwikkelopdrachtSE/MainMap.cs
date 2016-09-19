@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace OntwikkelopdrachtSE
 {
-    public partial class Form1 : Form
+    public partial class MainMap : Form
     {
-        public Form1()
+        public World Level;
+
+        public MainMap()
         {
             InitializeComponent();
+            //TODO Prompt the player with the character creation form
+            //TODO Create new world object
         }
     }
 }
