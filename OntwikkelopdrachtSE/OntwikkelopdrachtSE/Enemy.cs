@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OntwikkelopdrachtSE
 {
-    class Enemy : Entity
+    public class Enemy : Entity
     {
         public string Type;
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OntwikkelopdrachtSE
 {
-    class Tile
+    public class Tile
     {
         public string Type { get; set; }
         Point Location { get; }

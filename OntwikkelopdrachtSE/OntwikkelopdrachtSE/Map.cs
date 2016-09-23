@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OntwikkelopdrachtSE
 {
-    class Map
+    public class Map
     {
         public List<Tile> Tiles { get; }
         public List<Enemy> EnemyDefault { get; }

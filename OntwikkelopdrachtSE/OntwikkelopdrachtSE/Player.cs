@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OntwikkelopdrachtSE
 {
-    class Player : Entity
+    public class Player : Entity
     {
         public string Class { get; set; }
         public int AttackLvl { get; set; }

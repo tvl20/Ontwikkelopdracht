@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OntwikkelopdrachtSE
 {
-    class Entity
+    public class Entity
     {
         public Point Location { get; set; }
         public int HP { get; set; }
