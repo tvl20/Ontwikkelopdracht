@@ -18,10 +18,9 @@ namespace OntwikkelopdrachtSE
         public int Actionpoints { get; set; }
         public int XP { get; set; }
 
-        public Player(Point location)
+        public Player(Point location) :base(location)
         {
-            this.Location = location;
-            this.Level = 0;
+            Level = 0;
         }
     }
 }

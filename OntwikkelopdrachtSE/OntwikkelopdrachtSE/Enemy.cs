@@ -11,9 +11,8 @@ namespace OntwikkelopdrachtSE
     {
         public string Type;
 
-        public Enemy(Point location, string type)
+        public Enemy(Point location, string type) :base (location)
         {
-            this.Location = location;
             Type = type;
         }
     }

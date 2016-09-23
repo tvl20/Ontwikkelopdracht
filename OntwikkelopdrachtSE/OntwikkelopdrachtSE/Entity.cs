@@ -14,6 +14,11 @@ namespace OntwikkelopdrachtSE
         public char Direction { get; set; }
         public int Level { get; set; }
 
+        public Entity(Point location)
+        {
+            Location = location;
+        }
+
         public void UpdateLocation(Point newLocation)
         {
             Location = newLocation;
