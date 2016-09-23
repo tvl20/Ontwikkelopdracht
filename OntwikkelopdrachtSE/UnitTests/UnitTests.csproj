@@ -45,11 +45,18 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UnitTestPlayer.cs" />
+    <Compile Include="UnitTestEnemy.cs" />
+    <Compile Include="UnitTestEntity.cs" />
+    <Compile Include="UnitTestTile.cs" />
+    <Compile Include="UnitTestMap.cs" />
     <Compile Include="UnitTestWorld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
