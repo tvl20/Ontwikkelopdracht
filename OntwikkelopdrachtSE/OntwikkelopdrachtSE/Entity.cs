@@ -15,6 +15,8 @@ namespace OntwikkelopdrachtSE
         public int Level { get; set; }
         public int MovePoints { get; set; }
         public int MovePointsPerMove { get; set; }
+        public int Actionpoints { get; set; }
+        public int ActionpointsPerAttack { get; set; }
 
         public Entity(Point location)
         {

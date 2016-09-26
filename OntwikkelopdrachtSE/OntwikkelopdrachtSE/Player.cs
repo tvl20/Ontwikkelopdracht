@@ -13,10 +13,9 @@ namespace OntwikkelopdrachtSE
         public int AttackLvl { get; set; }
         public int DefenceLvl { get; set; }
         public int MaxHP { get; set; }
-        public int ActionpointsPerAttack { get; set; }
         public int MaxActionpoints { get; set; }
-        public int Actionpoints { get; set; }
-        public int ActionpointsRegen { get; set; }
+        public int ActionPointsRegen { get; set; }
+        public int MovePointsRegen { get; set; }
         public int XP { get; set; }
 
         public Player(Point location, string _class) :base(location)
