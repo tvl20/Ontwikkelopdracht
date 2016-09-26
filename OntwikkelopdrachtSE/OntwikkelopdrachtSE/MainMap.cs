@@ -17,8 +17,12 @@ namespace OntwikkelopdrachtSE
         public MainMap()
         {
             InitializeComponent();
-            //TODO Prompt the player with the character creation form
+            CharacterCreationDetails frm2 = new CharacterCreationDetails();
+            frm2.ShowDialog();
+            Level = new World(@"C:\\Users\Teun\Source\Repos\Ontwikkelopdracht\OntwikkelopdrachtSE\OntwikkelopdrachtSE\Level0-1.txt", frm2.Class);
             //TODO Create new world object
         }
+
+        //TODO Create a timer for the main app
     }
 }

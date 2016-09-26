@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,12 +13,11 @@ namespace OntwikkelopdrachtSE
         public Player Player { get; private set; }
         private Map Map;
 
-        public World(string pathToMap, Player p)
+        public World(string pathToMap, string _class)
         {
-            Player = p;
             Map = new Map(pathToMap);
-            //TODO update the location of the player with the spawnlocation
-            //TODO update the list of Enemies to the Default list of enemys (in map class)
+            Player = new Player(Map.PlayerSpawnlocation, _class);
+            Enemies = Map.EnemyDefault;
             UpdateEntities();
             UpdateMap();
         }

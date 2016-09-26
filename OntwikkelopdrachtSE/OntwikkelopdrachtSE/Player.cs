@@ -16,11 +16,13 @@ namespace OntwikkelopdrachtSE
         public int ActionpointsPerAttack { get; set; }
         public int MaxActionpoints { get; set; }
         public int Actionpoints { get; set; }
+        public int ActionpointsRegen { get; set; }
         public int XP { get; set; }
 
-        public Player(Point location) :base(location)
+        public Player(Point location, string _class) :base(location)
         {
             Level = 0;
+            Class = _class;
         }
     }
 }

@@ -1,0 +1,39 @@
+﻿ATK		- Damage per hit
+DEF		- Damage reduction when hit
+APMAX	- Action Points Maximum
+APATK	- Action Points Per Attack
+APREG	- Action Points Regen Per Tick
+HPMAX	- Max Hit Points
+
+
+Knight:
+ATK   -	Medium
+DEF   - Medium
+APMAX - Medium
+APATK - Medium
+APREG - Medium
+HPMAX - Medium
+
+Slugger:
+ATK   - High
+DEF   - Medium
+APMAX - Low
+APATK - High
+APREG - Medium
+HPMAX - Medium
+
+Crusader:
+ATK   - Low
+DEF   - High
+APMAX - High
+APATK - Medium
+APREG - Low
+HPMAX - High
+
+Paladin:
+ATK   - Medium
+DEF   - Low
+APMAX - High
+APATK - Low
+APREG - Medium
+HPMAX - Low
