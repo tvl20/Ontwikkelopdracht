@@ -19,9 +19,22 @@ namespace OntwikkelopdrachtSE
             InitializeComponent();
             CharacterCreationDetails frm2 = new CharacterCreationDetails();
             frm2.ShowDialog();
-            Level = new World(@"C:\\Users\Teun\Source\Repos\Ontwikkelopdracht\OntwikkelopdrachtSE\OntwikkelopdrachtSE\Level0-1.txt", frm2.Class);
+            timer1.Enabled = true;
+            Level = new World(@"C:\Users\Teun\Source\Repos\Ontwikkelopdracht\OntwikkelopdrachtSE\OntwikkelopdrachtSE\Level0-1.txt", frm2.Class);
+
         }
 
-        //TODO Create a timer for the main app
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Graphics g = pn_main.CreateGraphics();
+            for(int i = 1; i < 16; i++)
+            {
+                for (int j = 1; j < 15; j++)
+                {
+                    g.DrawString("G", new Font("Arial", 12.0f), Brushes.White, j * 13, i*13-13);
+                }
+                g.DrawString("Q", new Font("Arial", 12.0f), Brushes.White, 0, i * 13 - 13);
+            }
+        }
     }
 }
