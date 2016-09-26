@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pn_main = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer1
@@ -39,21 +40,32 @@
             // 
             // pn_main
             // 
-            this.pn_main.BackColor = System.Drawing.Color.Blue;
+            this.pn_main.BackColor = System.Drawing.Color.Black;
             this.pn_main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_main.Location = new System.Drawing.Point(12, 12);
+            this.pn_main.Location = new System.Drawing.Point(12, 51);
             this.pn_main.Name = "pn_main";
             this.pn_main.Size = new System.Drawing.Size(203, 203);
             this.pn_main.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(88, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Map:";
+            // 
             // MainMap
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(232, 225);
+            this.ClientSize = new System.Drawing.Size(227, 266);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pn_main);
             this.Name = "MainMap";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -61,6 +73,7 @@
 
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel pn_main;
+        private System.Windows.Forms.Label label1;
     }
 }
 
