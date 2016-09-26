@@ -24,7 +24,11 @@ namespace OntwikkelopdrachtSE
 
         public void UpdateMap()
         {
-            //TODO Draw all the tiles on the map
+            foreach(Tile t in Map.Tiles)
+            {
+                //TODO draw the tile, if there is a player draw the player, if there is an enemy draw the enemy
+                // if there is a powerup draw that and if there is a wall draw that
+            }
         }
 
         public void UpdateEntities()
