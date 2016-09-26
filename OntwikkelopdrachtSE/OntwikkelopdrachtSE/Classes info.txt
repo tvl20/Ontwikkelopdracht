@@ -4,6 +4,7 @@ APMAX	- Action Points Maximum
 APATK	- Action Points Per Attack
 APREG	- Action Points Regen Per Tick
 HPMAX	- Max Hit Points
+MPPMV	- Move Points Per Move
 
 
 Knight:
@@ -13,6 +14,7 @@ APMAX - Medium
 APATK - Medium
 APREG - Medium
 HPMAX - Medium
+MPPMV - Medium
 
 Slugger:
 ATK   - High
@@ -21,6 +23,7 @@ APMAX - Low
 APATK - High
 APREG - Medium
 HPMAX - Medium
+MPPMV - medium
 
 Crusader:
 ATK   - Low
@@ -29,6 +32,7 @@ APMAX - High
 APATK - Medium
 APREG - Low
 HPMAX - High
+MPPMV - High
 
 Paladin:
 ATK   - Medium
@@ -37,3 +41,4 @@ APMAX - High
 APATK - Low
 APREG - Medium
 HPMAX - Low
+MPPMV - Low

@@ -44,6 +44,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lb_APperATK = new System.Windows.Forms.Label();
             this.bt_Confirm = new System.Windows.Forms.Button();
+            this.lb_MPperMove = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -76,7 +78,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 111);
+            this.label3.Location = new System.Drawing.Point(30, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 17);
             this.label3.TabIndex = 3;
@@ -85,7 +87,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 128);
+            this.label4.Location = new System.Drawing.Point(30, 109);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 17);
             this.label4.TabIndex = 4;
@@ -94,7 +96,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 145);
+            this.label5.Location = new System.Drawing.Point(30, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 17);
             this.label5.TabIndex = 5;
@@ -103,7 +105,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 162);
+            this.label6.Location = new System.Drawing.Point(30, 143);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(123, 17);
             this.label6.TabIndex = 6;
@@ -112,7 +114,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(27, 179);
+            this.label7.Location = new System.Drawing.Point(30, 160);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(140, 17);
             this.label7.TabIndex = 7;
@@ -121,7 +123,7 @@
             // lb_ATK
             // 
             this.lb_ATK.AutoSize = true;
-            this.lb_ATK.Location = new System.Drawing.Point(239, 111);
+            this.lb_ATK.Location = new System.Drawing.Point(242, 92);
             this.lb_ATK.Name = "lb_ATK";
             this.lb_ATK.Size = new System.Drawing.Size(46, 17);
             this.lb_ATK.TabIndex = 8;
@@ -130,7 +132,7 @@
             // lb_DEF
             // 
             this.lb_DEF.AutoSize = true;
-            this.lb_DEF.Location = new System.Drawing.Point(239, 128);
+            this.lb_DEF.Location = new System.Drawing.Point(242, 109);
             this.lb_DEF.Name = "lb_DEF";
             this.lb_DEF.Size = new System.Drawing.Size(46, 17);
             this.lb_DEF.TabIndex = 9;
@@ -139,7 +141,7 @@
             // lb_MaxHP
             // 
             this.lb_MaxHP.AutoSize = true;
-            this.lb_MaxHP.Location = new System.Drawing.Point(239, 145);
+            this.lb_MaxHP.Location = new System.Drawing.Point(242, 126);
             this.lb_MaxHP.Name = "lb_MaxHP";
             this.lb_MaxHP.Size = new System.Drawing.Size(54, 17);
             this.lb_MaxHP.TabIndex = 10;
@@ -148,7 +150,7 @@
             // lb_MaxAP
             // 
             this.lb_MaxAP.AutoSize = true;
-            this.lb_MaxAP.Location = new System.Drawing.Point(239, 162);
+            this.lb_MaxAP.Location = new System.Drawing.Point(242, 143);
             this.lb_MaxAP.Name = "lb_MaxAP";
             this.lb_MaxAP.Size = new System.Drawing.Size(54, 17);
             this.lb_MaxAP.TabIndex = 11;
@@ -157,7 +159,7 @@
             // lb_RegAP
             // 
             this.lb_RegAP.AutoSize = true;
-            this.lb_RegAP.Location = new System.Drawing.Point(239, 179);
+            this.lb_RegAP.Location = new System.Drawing.Point(242, 160);
             this.lb_RegAP.Name = "lb_RegAP";
             this.lb_RegAP.Size = new System.Drawing.Size(54, 17);
             this.lb_RegAP.TabIndex = 12;
@@ -166,7 +168,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(27, 196);
+            this.label8.Location = new System.Drawing.Point(30, 177);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(163, 17);
             this.label8.TabIndex = 13;
@@ -175,7 +177,7 @@
             // lb_APperATK
             // 
             this.lb_APperATK.AutoSize = true;
-            this.lb_APperATK.Location = new System.Drawing.Point(239, 196);
+            this.lb_APperATK.Location = new System.Drawing.Point(242, 177);
             this.lb_APperATK.Name = "lb_APperATK";
             this.lb_APperATK.Size = new System.Drawing.Size(54, 17);
             this.lb_APperATK.TabIndex = 14;
@@ -191,11 +193,31 @@
             this.bt_Confirm.UseVisualStyleBackColor = true;
             this.bt_Confirm.Click += new System.EventHandler(this.bt_Confirm_Click);
             // 
+            // lb_MPperMove
+            // 
+            this.lb_MPperMove.AutoSize = true;
+            this.lb_MPperMove.Location = new System.Drawing.Point(242, 194);
+            this.lb_MPperMove.Name = "lb_MPperMove";
+            this.lb_MPperMove.Size = new System.Drawing.Size(59, 17);
+            this.lb_MPperMove.TabIndex = 17;
+            this.lb_MPperMove.Text = "Label14";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(30, 194);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(153, 17);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Move Points Per Move:";
+            // 
             // CharacterCreationDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 296);
+            this.Controls.Add(this.lb_MPperMove);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.bt_Confirm);
             this.Controls.Add(this.lb_APperATK);
             this.Controls.Add(this.label8);
@@ -237,5 +259,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lb_APperATK;
         private System.Windows.Forms.Button bt_Confirm;
+        private System.Windows.Forms.Label lb_MPperMove;
+        private System.Windows.Forms.Label label10;
     }
 }

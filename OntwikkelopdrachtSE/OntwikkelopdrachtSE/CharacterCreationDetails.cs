@@ -33,6 +33,7 @@ namespace OntwikkelopdrachtSE
                 lb_APperATK.Text = "Medium";
                 lb_RegAP.Text = "Medium";
                 lb_MaxHP.Text = "Medium";
+                lb_MPperMove.Text = "Medium";
             }
             else if (cb_Class.SelectedItem.ToString() == "Slugger")
             {
@@ -42,6 +43,7 @@ namespace OntwikkelopdrachtSE
                 lb_APperATK.Text = "High";
                 lb_RegAP.Text = "Medium";
                 lb_MaxHP.Text = "Medium";
+                lb_MPperMove.Text = "Medium";
             }
             else if (cb_Class.SelectedItem.ToString() == "Crusader")
             {
@@ -51,6 +53,7 @@ namespace OntwikkelopdrachtSE
                 lb_APperATK.Text = "Medium";
                 lb_RegAP.Text = "Low";
                 lb_MaxHP.Text = "High";
+                lb_MPperMove.Text = "High";
             }
             else if (cb_Class.SelectedItem.ToString() == "Paladin")
             {
@@ -60,6 +63,7 @@ namespace OntwikkelopdrachtSE
                 lb_APperATK.Text = "Low";
                 lb_RegAP.Text = "Medium";
                 lb_MaxHP.Text = "Low";
+                lb_MPperMove.Text = "Low";
             }
         }
 

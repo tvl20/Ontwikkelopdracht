@@ -13,6 +13,8 @@ namespace OntwikkelopdrachtSE
         public int HP { get; set; }
         public char Direction { get; set; }
         public int Level { get; set; }
+        public int MovePoints { get; set; }
+        public int MovePointsPerMove { get; set; }
 
         public Entity(Point location)
         {
