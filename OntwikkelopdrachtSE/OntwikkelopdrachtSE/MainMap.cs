@@ -12,6 +12,12 @@ namespace OntwikkelopdrachtSE
 {
     public partial class MainMap : Form
     {
+        /*
+         * Font Ariel, 12.0f
+         * one tile is 13x13
+         * total width/height: 13*numberOfTiles+8
+         */
+
         public World Level;
 
         public MainMap()
@@ -20,7 +26,7 @@ namespace OntwikkelopdrachtSE
             CharacterCreationDetails frm2 = new CharacterCreationDetails();
             frm2.ShowDialog();
             timer1.Enabled = true;
-            Level = new World(@"C:\Users\Teun\Source\Repos\Ontwikkelopdracht2\OntwikkelopdrachtSE\OntwikkelopdrachtSE\Level0-1.txt", frm2.Class);
+            Level = new World(@"C:\Users\Teun\Source\Repos\Ontwikkelopdracht2\OntwikkelopdrachtSE\OntwikkelopdrachtSE\Level0-1.txt", frm2.Class, pn_main);
 
         }
 

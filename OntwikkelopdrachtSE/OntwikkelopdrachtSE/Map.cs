@@ -31,23 +31,24 @@ namespace OntwikkelopdrachtSE
                     else if (text.Substring(counter, 1) == "E")
                     {
                         Tiles.Add(new Tile(x, y, Tile.type.Enemy));
+                        EnemyDefault.Add(new Enemy(new Point(x, y), "Normal"));
                     }
-                    else if (text.Substring(counter, 1) == "P")
+                    else if (text.Substring(counter, 1) == "T")
                     {
-                        Tiles.Add(new Tile(x, y, Tile.type.Player));
+                        Tiles.Add(new Tile(x, y, Tile.type.Trap));
                     }
                     else if (text.Substring(counter, 1) == "W")
                     {
                         Tiles.Add(new Tile(x, y, Tile.type.Wall));
                     }
-                    else if (text.Substring(counter,1) == "T")
+                    else if (text.Substring(counter, 1) == "P")
                     {
-                        Tiles.Add(new Tile(x, y, Tile.type.Trap));
+                        Tiles.Add(new Tile(x, y, Tile.type.Player));
+                        PlayerSpawnlocation = new Point(x, y);
                     }
                     counter++;
                 }
             }
-            //TODO vanuit txt file map laden, lists vullen en player position opzoeken
         }
     }
 }

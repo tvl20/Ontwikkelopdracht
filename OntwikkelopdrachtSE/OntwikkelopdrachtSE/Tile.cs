@@ -12,7 +12,7 @@ namespace OntwikkelopdrachtSE
         public enum type { Trap, Blank, Wall, Enemy, Player };
 
         public type Type { get; set; }
-        Point Location { get; }
+        public Point Location { get; }
 
         public Tile(int x, int y, type _type)
         {

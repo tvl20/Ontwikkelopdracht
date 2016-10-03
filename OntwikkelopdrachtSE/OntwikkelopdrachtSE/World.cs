@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace OntwikkelopdrachtSE
 {
@@ -13,21 +14,41 @@ namespace OntwikkelopdrachtSE
         public Player Player { get; private set; }
         private Map Map;
 
-        public World(string pathToMap, string _class)
+        public World(string pathToMap, string _class, Panel p)
         {
             Map = new Map(pathToMap);
             Player = new Player(Map.PlayerSpawnlocation, _class);
             Enemies = Map.EnemyDefault;
             UpdateEntities();
-            UpdateMap();
+            UpdateMap(p);
         }
 
-        public void UpdateMap()
+        public void UpdateMap(Panel p)
         {
-            //foreach(Tile t in Map.Tiles)
+            foreach(Tile t in Map.Tiles)
             {
-                //TODO draw the tile, if there is a player draw the player, if there is an enemy draw the enemy
-                // if there is a powerup draw that and if there is a wall draw that
+                Graphics g = p.CreateGraphics();
+                Font _font = new Font("Arial", 12.0f);
+                if ((t.Type == Tile.type.Blank))
+                {
+                    g.DrawString("~", _font, Brushes.White, t.Location);
+                }
+                else if(t.Type == Tile.type.Enemy)
+                {
+                    g.DrawString("E", _font, Brushes.White, t.Location);
+                }
+                else if(t.Type == Tile.type.Wall)
+                {
+                    g.DrawString("W", _font, Brushes.White, t.Location);
+                }
+                else if(t.Type == Tile.type.Player)
+                {
+                    g.DrawString("P", _font, Brushes.White, t.Location);
+                }
+                else if(t.Type == Tile.type.Trap)
+                {
+                    g.DrawString("-", _font, Brushes.White, t.Location);
+                }
             }
         }
 
