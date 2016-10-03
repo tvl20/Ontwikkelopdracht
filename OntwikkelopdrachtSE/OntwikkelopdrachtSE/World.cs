@@ -29,7 +29,7 @@ namespace OntwikkelopdrachtSE
             {
                 Graphics g = p.CreateGraphics();
                 Font _font = new Font("Arial", 12.0f);
-                Point _Location = new Point(t.Location.X * 13 + 4, t.Location.Y * 13 + 4);
+                Point _Location = new Point((t.Location.X-1) * 13+8, (t.Location.Y-1) * 13+8);
                 if ((t.Type == Tile.type.Blank))
                 {
                     g.DrawString("~", _font, Brushes.White, _Location);

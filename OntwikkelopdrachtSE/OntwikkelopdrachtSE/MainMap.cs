@@ -15,7 +15,6 @@ namespace OntwikkelopdrachtSE
         /*
          * Font Ariel, 12.0f
          * one tile is 13x13
-         * total width/height: 13*numberOfTiles+8
          */
 
         public World Level;
@@ -32,7 +31,7 @@ namespace OntwikkelopdrachtSE
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            Level.UpdateMap(pn_main);
         }
     }
 }
