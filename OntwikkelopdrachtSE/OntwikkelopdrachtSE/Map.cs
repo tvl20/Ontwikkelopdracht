@@ -15,10 +15,21 @@ namespace OntwikkelopdrachtSE
 
         public Map(string path)
         {
+            Tiles = new List<Tile>();
+            EnemyDefault = new List<Enemy>();
+            //in the file everything has to go on ONE line, otherwise you get an error!!
             string text = System.IO.File.ReadAllText(path);
-            for (int i = 1; i < text.Length + 1; i++)
+            int counter = 0;
+            for (int y = 1; y < 31; y++)
             {
-
+                for (int x = 1; x < 31; x++)
+                {
+                    if(text.Substring(counter, 1) == "W")
+                    {
+                        Tiles.Add(new Tile(x, y, Tile.type.Wall));
+                    }
+                    counter++;
+                }
             }
             //TODO vanuit txt file map laden, lists vullen en player position opzoeken
         }

@@ -9,13 +9,15 @@ namespace OntwikkelopdrachtSE
 {
     public class Tile
     {
-        public string Type { get; set; }
+        public enum type { Trap, Blank, Wall, Enemy, Player };
+
+        public type Type { get; set; }
         Point Location { get; }
 
-        public Tile(int x, int y, string type)
+        public Tile(int x, int y, type _type)
         {
             Location = new Point(x, y);
-            Type = type;
+            Type = _type;
         }
     }
 }
