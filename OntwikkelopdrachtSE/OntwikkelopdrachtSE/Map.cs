@@ -18,13 +18,14 @@ namespace OntwikkelopdrachtSE
             Tiles = new List<Tile>();
             EnemyDefault = new List<Enemy>();
             //in the file everything has to go on ONE line, otherwise you'll get an error!!
+            //might fix this in the future, not sure.
             string text = System.IO.File.ReadAllText(path);
             int counter = 0;
             for (int y = 1; y < 31; y++)
             {
                 for (int x = 1; x < 31; x++)
                 {
-                    if (text.Substring(counter, 1) == "X")
+                    if (text.Substring(counter, 1) == "-")
                     {
                         Tiles.Add(new Tile(x, y, Tile.type.Blank));
                     }
@@ -45,6 +46,10 @@ namespace OntwikkelopdrachtSE
                     {
                         Tiles.Add(new Tile(x, y, Tile.type.Player));
                         PlayerSpawnlocation = new Point(x, y);
+                    }
+                    else if(text.Substring(counter,1) == "G")
+                    {
+                        Tiles.Add(new Tile(x, y, Tile.type.Goal));
                     }
                     counter++;
                 }

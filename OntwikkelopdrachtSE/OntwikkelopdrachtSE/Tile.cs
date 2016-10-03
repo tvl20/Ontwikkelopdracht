@@ -9,7 +9,7 @@ namespace OntwikkelopdrachtSE
 {
     public class Tile
     {
-        public enum type { Trap, Blank, Wall, Enemy, Player };
+        public enum type { Trap, Blank, Wall, Enemy, Player, Goal };
 
         public type Type { get; set; }
         public Point Location { get; }

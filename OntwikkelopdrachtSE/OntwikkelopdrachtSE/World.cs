@@ -29,25 +29,30 @@ namespace OntwikkelopdrachtSE
             {
                 Graphics g = p.CreateGraphics();
                 Font _font = new Font("Arial", 12.0f);
+                Point _Location = new Point(t.Location.X * 13 + 4, t.Location.Y * 13 + 4);
                 if ((t.Type == Tile.type.Blank))
                 {
-                    g.DrawString("~", _font, Brushes.White, t.Location);
+                    g.DrawString("~", _font, Brushes.White, _Location);
                 }
                 else if(t.Type == Tile.type.Enemy)
                 {
-                    g.DrawString("E", _font, Brushes.White, t.Location);
+                    g.DrawString("E", _font, Brushes.White, _Location);
                 }
                 else if(t.Type == Tile.type.Wall)
                 {
-                    g.DrawString("W", _font, Brushes.White, t.Location);
+                    g.DrawString("W", _font, Brushes.White, _Location);
                 }
                 else if(t.Type == Tile.type.Player)
                 {
-                    g.DrawString("P", _font, Brushes.White, t.Location);
+                    g.DrawString("P", _font, Brushes.White, _Location);
                 }
                 else if(t.Type == Tile.type.Trap)
                 {
-                    g.DrawString("-", _font, Brushes.White, t.Location);
+                    g.DrawString("-", _font, Brushes.White, _Location);
+                }
+                else if(t.Type == Tile.type.Goal)
+                {
+                    g.DrawString("G", _font, Brushes.White, _Location);
                 }
             }
         }
