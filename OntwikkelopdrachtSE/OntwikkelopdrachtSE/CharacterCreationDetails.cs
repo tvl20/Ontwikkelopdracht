@@ -69,7 +69,15 @@ namespace OntwikkelopdrachtSE
 
         private void bt_Confirm_Click(object sender, EventArgs e)
         {
-            Class = cb_Class.SelectedItem.ToString();
+            if (cb_Class.SelectedItem != null)
+            {
+                Class = cb_Class.SelectedItem.ToString();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Error, please select one out of the list");
+            }
         }
     }
 }

@@ -15,6 +15,11 @@ namespace OntwikkelopdrachtSE
 
         public Map(string path)
         {
+            string text = System.IO.File.ReadAllText(path);
+            for (int i = 1; i < text.Length + 1; i++)
+            {
+
+            }
             //TODO vanuit txt file map laden, lists vullen en player position opzoeken
         }
     }
