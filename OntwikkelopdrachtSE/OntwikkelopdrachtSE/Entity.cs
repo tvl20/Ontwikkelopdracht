@@ -32,10 +32,25 @@ namespace OntwikkelopdrachtSE
 
         public void Move(char _direction)
         {
-            //TODO make the player move in the current direction
             if (Direction == _direction)
             {
-                
+                Point newPoint = this.Location;
+                switch (Direction)
+                {
+                    case 'N':
+                        newPoint.Y = newPoint.Y - 1;
+                        break;
+                    case 'E':
+                        newPoint.X = newPoint.X + 1;
+                        break;
+                    case 'S';
+                        newPoint.Y = newPoint.Y + 1;
+                        break;
+                    case 'W':
+                        newPoint.X = newPoint.X - 1;
+                        break;
+                }
+                this.UpdateLocation(newPoint);
             }
             else
             {
