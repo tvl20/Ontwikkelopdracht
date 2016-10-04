@@ -50,6 +50,7 @@ namespace OntwikkelopdrachtSE
                         newPoint.X = newPoint.X - 1;
                         break;
                 }
+                MovePoints = MovePoints - MovePointsPerMove;
                 this.UpdateLocation(newPoint);
             }
             else

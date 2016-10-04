@@ -18,6 +18,7 @@ namespace OntwikkelopdrachtSE
          */
 
         public World Level;
+        private int counter = 0;
 
         public MainMap()
         {
@@ -31,6 +32,18 @@ namespace OntwikkelopdrachtSE
         private void timer1_Tick(object sender, EventArgs e)
         {
             Level.UpdateMap(pn_main);
+            counter++;
+            if (counter >= 10)
+            {
+                foreach (Enemy E in Level.Enemies)
+                {
+                    E.MovePoints = E.MovePoints + E.MovePointsRegen;
+                }
+                if (Level.Player.MovePoints < Level.Player.MaxMovepoints)
+                {
+                    Level.Player.MovePoints = Level.Player.MovePoints + Level.Player.MovePointsRegen;
+                }
+            }
         }
     }
 }
