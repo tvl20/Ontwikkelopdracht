@@ -59,7 +59,8 @@ namespace OntwikkelopdrachtSE
 
         public void UpdateEntities()
         {
-            //TODO Draw all the Entities on the map
+            //TODO Update all the stats of the entities
+
         }
     }
 }

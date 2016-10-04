@@ -6,6 +6,9 @@ APREG	- Action Points Regen Per Tick
 HPMAX	- Max Hit Points
 MPPMV	- Move Points Per Move
 
+low > 2;	(base)
+medium > 3	(base + 50%)
+high > 5	(base + 150%)
 
 Knight:
 ATK   -	Medium
@@ -39,6 +42,6 @@ ATK   - Medium
 DEF   - Low
 APMAX - High
 APATK - Low
-APREG - Medium
+APREG - High
 HPMAX - Low
 MPPMV - Low

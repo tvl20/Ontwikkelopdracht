@@ -15,8 +15,10 @@ namespace OntwikkelopdrachtSE
         public int Level { get; set; }
         public int MovePoints { get; set; }
         public int MovePointsPerMove { get; set; }
+        public int MovePointsRegen { get; set; }
         public int Actionpoints { get; set; }
         public int ActionpointsPerAttack { get; set; }
+        public int ActionPointsRegen { get; set; }
 
         public Entity(Point location)
         {
@@ -28,9 +30,17 @@ namespace OntwikkelopdrachtSE
             Location = newLocation;
         }
 
-        public void Move()
+        public void Move(char _direction)
         {
             //TODO make the player move in the current direction
+            if (Direction == _direction)
+            {
+                
+            }
+            else
+            {
+                Direction = _direction;
+            }
         }
 
         public void Attack()

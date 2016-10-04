@@ -26,7 +26,6 @@ namespace OntwikkelopdrachtSE
             frm2.ShowDialog();
             timer1.Enabled = true;
             Level = new World(@"C:\Users\Teun\Source\Repos\Ontwikkelopdracht2\OntwikkelopdrachtSE\OntwikkelopdrachtSE\Level0-1.txt", frm2._class, pn_main);
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
