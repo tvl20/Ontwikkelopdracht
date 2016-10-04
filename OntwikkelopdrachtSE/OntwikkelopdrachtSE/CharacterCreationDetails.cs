@@ -12,7 +12,8 @@ namespace OntwikkelopdrachtSE
 {
     public partial class CharacterCreationDetails : Form
     {
-        public string Class;
+        public enum Class { Knight, Slugger, Crusader, Paladin};
+        public Class _class;
         public CharacterCreationDetails()
         {
             InitializeComponent();
@@ -21,6 +22,7 @@ namespace OntwikkelopdrachtSE
             cb_Class.Items.Add("Crusader");
             cb_Class.Items.Add("Paladin");
             cb_Class.SelectedIndex = 0;
+            _class = Class.Knight;
         }
 
         private void cb_Class_SelectedIndexChanged(object sender, EventArgs e)
@@ -34,6 +36,7 @@ namespace OntwikkelopdrachtSE
                 lb_RegAP.Text = "Medium";
                 lb_MaxHP.Text = "Medium";
                 lb_MPperMove.Text = "Medium";
+                _class = Class.Knight;
             }
             else if (cb_Class.SelectedItem.ToString() == "Slugger")
             {
@@ -44,6 +47,7 @@ namespace OntwikkelopdrachtSE
                 lb_RegAP.Text = "Medium";
                 lb_MaxHP.Text = "Medium";
                 lb_MPperMove.Text = "Medium";
+                _class = Class.Slugger;
             }
             else if (cb_Class.SelectedItem.ToString() == "Crusader")
             {
@@ -54,6 +58,7 @@ namespace OntwikkelopdrachtSE
                 lb_RegAP.Text = "Low";
                 lb_MaxHP.Text = "High";
                 lb_MPperMove.Text = "High";
+                _class = Class.Crusader;
             }
             else if (cb_Class.SelectedItem.ToString() == "Paladin")
             {
@@ -64,20 +69,13 @@ namespace OntwikkelopdrachtSE
                 lb_RegAP.Text = "Medium";
                 lb_MaxHP.Text = "Low";
                 lb_MPperMove.Text = "Low";
+                _class = Class.Paladin;
             }
         }
 
         private void bt_Confirm_Click(object sender, EventArgs e)
         {
-            if (cb_Class.SelectedItem != null)
-            {
-                Class = cb_Class.SelectedItem.ToString();
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Error, please select one out of the list");
-            }
+            this.Close();
         }
     }
 }

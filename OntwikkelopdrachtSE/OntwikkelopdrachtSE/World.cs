@@ -14,7 +14,7 @@ namespace OntwikkelopdrachtSE
         public Player Player { get; private set; }
         private Map Map;
 
-        public World(string pathToMap, string _class, Panel p)
+        public World(string pathToMap, CharacterCreationDetails.Class _class, Panel p)
         {
             Map = new Map(pathToMap);
             Player = new Player(Map.PlayerSpawnlocation, _class);

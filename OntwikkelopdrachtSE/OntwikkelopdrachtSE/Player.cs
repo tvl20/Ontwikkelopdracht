@@ -9,7 +9,7 @@ namespace OntwikkelopdrachtSE
 {
     public class Player : Entity
     {
-        public string Class { get; set; }
+        public CharacterCreationDetails.Class Class;
         public int AttackLvl { get; set; }
         public int DefenceLvl { get; set; }
         public int MaxHP { get; set; }
@@ -18,7 +18,7 @@ namespace OntwikkelopdrachtSE
         public int MovePointsRegen { get; set; }
         public int XP { get; set; }
 
-        public Player(Point location, string _class) :base(location)
+        public Player(Point location, CharacterCreationDetails.Class _class) :base(location)
         {
             Level = 0;
             Class = _class;
