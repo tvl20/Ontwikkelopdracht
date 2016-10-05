@@ -174,6 +174,7 @@
             this.Controls.Add(this.pn_main);
             this.Name = "MainMap";
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainMap_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

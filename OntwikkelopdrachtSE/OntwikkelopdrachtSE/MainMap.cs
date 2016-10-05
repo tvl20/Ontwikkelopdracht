@@ -45,5 +45,16 @@ namespace OntwikkelopdrachtSE
                 }
             }
         }
+
+        private void MainMap_KeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.KeyCode.ToString() == "w" || e.KeyCode.ToString() == "W") ||
+                (e.KeyCode.ToString() == "a" || e.KeyCode.ToString() == "A") ||
+                (e.KeyCode.ToString() == "s" || e.KeyCode.ToString() == "S") ||
+                (e.KeyCode.ToString() == "d" || e.KeyCode.ToString() == "D"))
+            {
+
+            }
+        }
     }
 }

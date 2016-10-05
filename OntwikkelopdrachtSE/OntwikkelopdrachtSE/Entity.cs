@@ -43,7 +43,7 @@ namespace OntwikkelopdrachtSE
                     case 'E':
                         newPoint.X = newPoint.X + 1;
                         break;
-                    case 'S';
+                    case 'S':
                         newPoint.Y = newPoint.Y + 1;
                         break;
                     case 'W':
